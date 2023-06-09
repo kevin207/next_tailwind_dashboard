@@ -18,8 +18,8 @@ const Drawer = () => {
     <div
       className={
         drawer == true
-          ? "w-[15vw] h-100 bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
-          : "w-[4vw] h-100 bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
+          ? "w-[15vw] h-[100vh] bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
+          : "w-[4vw] h-[100vh] bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
       }
     >
       {/* TOP */}
@@ -35,7 +35,7 @@ const Drawer = () => {
       </div>
 
       {/* MIDDLE */}
-      <div className="text-white h-[92vh]">
+      <div className="text-white h-[86vh]">
         {/* FIRST MENU */}
         <div
           className={
@@ -127,10 +127,6 @@ const Drawer = () => {
             : "text-tertiary cursor-pointer font-semibold text-md bg-primary flex h-[6vh] justify-end items-center px-3 transition-all ease-in duration-250 hover:text-slate-400"
         }
       >
-        {/* <Link href={"/login"}>
-          <BiLogOut className="text-2xl hover:text-slate-400" />
-        </Link> */}
-
         {drawer == true ? (
           <MdKeyboardArrowLeft className="text-3xl " />
         ) : (

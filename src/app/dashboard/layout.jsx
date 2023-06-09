@@ -1,9 +1,6 @@
-import Navbar from "@/components/Navbar";
-import { Raleway } from "next/font/google";
-import Drawer from "@/components/Drawer";
+import Navbar from "@/src/components/Navbar";
+import Drawer from "@/src/components/Drawer";
 import "../styles/globals.css";
-
-const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ITB - Dashboard Page",
@@ -13,7 +10,7 @@ export const metadata = {
 export default function DashboardLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body>
         <div className="flex flex-row w-screen h-screen">
           <Drawer />
           <Navbar title="Assesment System ">{children}</Navbar>

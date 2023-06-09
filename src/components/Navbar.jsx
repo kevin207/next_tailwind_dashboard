@@ -58,15 +58,8 @@ const Navbar = ({ title, children }) => {
         </div>
       </div>
 
-      {/* BREADCUMB */}
-      <div className="w-100 h-[5vh] px-12 bg-white text-slate-700 flex justify-between items-center shadow-sm">
-        Breadcumb
-      </div>
-
       {/* CHILDREN CONTAINER */}
-      <div className="bg-gray w-100 h-[92vh] bg-gray-200 flex justify-center items-center">
-        {children}
-      </div>
+      <div className="bg-gray-200 w-100 h-[92vh]">{children}</div>
     </div>
   );
 };
