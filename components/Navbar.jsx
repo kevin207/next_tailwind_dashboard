@@ -17,10 +17,10 @@ const Navbar = ({ title, children }) => {
     <div className="flex flex-col w-[100%]">
       {/* NAVBAR */}
       <div className="sticky top-0 w-100 h-[8vh] px-12 py-0 bg-white text-slate-700 flex justify-between items-center border-b-2">
-        <div className="text-2xl font-semibold">{title}</div>
+        <div className="text-2xl font-semibold text-slate-700">{title}</div>
         <div className="flex flex-row gap-6 items-center">
-          <MdOutlineNotificationsActive className="text-3xl cursor-pointer text-slate-500 transition-all ease-in duration-100 hover:text-slate-700" />
-          <MdMailOutline className="text-3xl cursor-pointer text-slate-500 transition-all ease-in duration-200 hover:text-slate-700" />
+          <MdOutlineNotificationsActive className="text-3xl cursor-pointer text-text transition-all ease-in duration-100 hover:text-slate-700" />
+          <MdMailOutline className="text-3xl cursor-pointer text-text transition-all ease-in duration-200 hover:text-slate-700" />
 
           <div className="relative">
             {/* AVATAR */}

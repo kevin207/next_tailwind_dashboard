@@ -18,12 +18,12 @@ const Drawer = () => {
     <div
       className={
         drawer == true
-          ? "w-[15vw] h-100 bg-slate-600 flex justify-between flex-col transition-all ease-in duration-150"
-          : "w-[4vw] h-100 bg-slate-600 flex justify-between flex-col transition-all ease-in duration-150"
+          ? "w-[15vw] h-100 bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
+          : "w-[4vw] h-100 bg-secondary flex justify-between flex-col transition-all ease-in duration-150"
       }
     >
       {/* TOP */}
-      <div className="text-white sticky top-0 font-normal bg-slate-700 flex h-[8vh] justify-center items-center shadow-sm">
+      <div className="text-tertiary sticky top-0 font-normal bg-primary flex h-[8vh] justify-center items-center shadow-sm">
         {drawer == true ? (
           <>
             <FaAtlassian className="text-3xl" />
@@ -46,7 +46,7 @@ const Drawer = () => {
           <div
             className={
               drawer == true
-                ? "px-4 text-md font-medium mb-1 text-slate-100"
+                ? "px-4 text-md font-medium mb-1 text-tertiary"
                 : "hidden"
             }
           >
@@ -58,8 +58,8 @@ const Drawer = () => {
             href={"/dashboard"}
             className={
               drawer == true
-                ? "text-slate-300 flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
-                : "text-slate-300 flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                ? "text-tertiary flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                : "text-tertiary flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
             }
           >
             {drawer == true ? (
@@ -78,8 +78,8 @@ const Drawer = () => {
             href="/dashboard/students"
             className={
               drawer == true
-                ? "text-slate-300 flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
-                : "text-slate-300 flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                ? "text-tertiary flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                : "text-tertiary flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
             }
           >
             {drawer == true ? (
@@ -98,8 +98,8 @@ const Drawer = () => {
             href="/dashboard/assigments"
             className={
               drawer == true
-                ? "text-slate-300 flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
-                : "text-slate-300 flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                ? "text-tertiary flex items-center gap-4 py-5 px-4 cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
+                : "text-tertiary flex items-center justify-center py-5 w-[100%] cursor-pointer transition-all ease-in duration-200 hover:bg-slate-700"
             }
           >
             {drawer == true ? (
@@ -123,8 +123,8 @@ const Drawer = () => {
         }}
         className={
           drawer == true
-            ? "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-end items-center px-6 transition-all ease-in duration-250 hover:text-slate-400"
-            : "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-end items-center px-3 transition-all ease-in duration-250 hover:text-slate-400"
+            ? "text-tertiary cursor-pointer font-semibold text-md bg-primary flex h-[6vh] justify-end items-center px-6 transition-all ease-in duration-250 hover:text-slate-400"
+            : "text-tertiary cursor-pointer font-semibold text-md bg-primary flex h-[6vh] justify-end items-center px-3 transition-all ease-in duration-250 hover:text-slate-400"
         }
       >
         {/* <Link href={"/login"}>
