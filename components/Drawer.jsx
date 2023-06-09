@@ -19,7 +19,7 @@ const Drawer = () => {
       className={
         drawer == true
           ? "w-[15vw] h-100 bg-slate-600 flex justify-between flex-col transition-all ease-in duration-150"
-          : "w-[5vw] h-100 bg-slate-600 flex justify-between flex-col transition-all ease-in duration-150"
+          : "w-[4vw] h-100 bg-slate-600 flex justify-between flex-col transition-all ease-in duration-150"
       }
     >
       {/* TOP */}
@@ -112,30 +112,23 @@ const Drawer = () => {
 
       {/* BOTTOM */}
       <div
+        onClick={() => {
+          setDrawer(!drawer);
+        }}
         className={
           drawer == true
-            ? "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-between items-center px-6 transition-all ease-in duration-250"
-            : "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-between items-center px-3 transition-all ease-in duration-250"
+            ? "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-end items-center px-6 transition-all ease-in duration-250 hover:text-slate-400"
+            : "text-white cursor-pointer font-semibold text-md bg-slate-700 flex h-[6vh] justify-end items-center px-3 transition-all ease-in duration-250 hover:text-slate-400"
         }
       >
-        <Link href={"/login"}>
+        {/* <Link href={"/login"}>
           <BiLogOut className="text-2xl hover:text-slate-400" />
-        </Link>
+        </Link> */}
 
         {drawer == true ? (
-          <MdKeyboardArrowLeft
-            className="text-3xl hover:text-slate-400"
-            onClick={() => {
-              setDrawer(!drawer);
-            }}
-          />
+          <MdKeyboardArrowLeft className="text-3xl " />
         ) : (
-          <MdKeyboardArrowRight
-            className="text-3xl hover:text-slate-400"
-            onClick={() => {
-              setDrawer(!drawer);
-            }}
-          />
+          <MdKeyboardArrowRight className="text-3xl " />
         )}
       </div>
     </div>
