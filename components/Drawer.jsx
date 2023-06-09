@@ -43,7 +43,13 @@ const Drawer = () => {
           }
         >
           {/* MENU TITLE */}
-          <div className="px-4 text-md font-medium mb-1 text-slate-100">
+          <div
+            className={
+              drawer == true
+                ? "px-4 text-md font-medium mb-1 text-slate-100"
+                : "hidden"
+            }
+          >
             MENU
           </div>
 
