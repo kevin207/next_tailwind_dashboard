@@ -9,7 +9,7 @@ const Breadcumbs = ({ breadcumbs }) => {
       <Link
         className={
           lastItem == 0
-            ? "text-gray-400 font-semibold"
+            ? "text-gray-400 font-semibold pointer-events-none"
             : "hover:underline font-semibold"
         }
         href={"/dashboard"}
@@ -21,7 +21,9 @@ const Breadcumbs = ({ breadcumbs }) => {
           <MdKeyboardArrowRight />
           <Link
             className={
-              index + 1 == lastItem ? "text-gray-400" : "hover:underline"
+              index + 1 == lastItem
+                ? "text-gray-400 pointer-events-none"
+                : "hover:underline"
             }
             href={breadcumbs.url}
           >
