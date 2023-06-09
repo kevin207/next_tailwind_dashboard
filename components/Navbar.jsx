@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { BiLogOut } from "react-icons/bi";
 import {
@@ -50,7 +51,7 @@ const Navbar = ({ title, children }) => {
               </div>
               <div className="pl-4 pr-10 select-none cursor-pointer py-2 hover:bg-gray-100 flex items-center gap-3 border-b-2 border-slate-100">
                 <BiLogOut className="text-xl" />
-                <div>Logout</div>
+                <Link href={"/login"}>Logout</Link>
               </div>
             </div>
           </div>
