@@ -1,7 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-
 import Breadcumbs from "@/src/components/Breadcumbs";
-import React from "react";
 
 const Dashboard = () => {
   const breadcumbs = [];
@@ -11,32 +10,38 @@ const Dashboard = () => {
       {/* BREADCUMBS 92-4 = 88 */}
       <Breadcumbs breadcumbs={breadcumbs} />
 
-      <div className="h-[88vh] flex items-center justify-center flex-col">
+      <div className="h-[88vh] flex items-center justify-center flex-col gap-6">
         <div>Dashboard</div>
 
         <button
-          className=" bg-slate-700 text-white py-2 px-12 rounded-md"
-          onClick={() => window.modal_test.showModal()}
+          className="btn btn-neutral"
+          onClick={() => window.my_modal_1.showModal()}
         >
           Open Daisy Modal
         </button>
       </div>
 
       {/* MODAL */}
-      <dialog id="modal_test" className="modal rounded-lg w-[500px]">
-        <form method="dialog" className="modal-box px-4 py-4">
-          <h3 className="font-semibold text-slate-800 text-lg border-b-2">
-            This Is Daisy Modal
+      <dialog id="my_modal_1" className="modal">
+        <form method="dialog" className="modal-box">
+          <h3 className="font-bold text-lg text-slate-700">
+            This Is Daisy UI Modal!
           </h3>
-          <p className="py-4 font-md text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui
-            accusamus voluptatibus repellat, quod reiciendis amet iste, facere
-            distinctio tempora cum ipsam! Cum ad quis libero, aut commodi enim
-            minima.
+          <p className="py-4 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            iusto sed omnis laudantium explicabo repellat officiis nulla esse
+            exercitationem doloribus deserunt, eius libero cumque optio
+            voluptate, inventore vitae blanditiis eveniet.
           </p>
-          <button className="btn bg-red-500 rounded-md py-1 px-12 text-white hover:bg-red-600 transition-all ease-in duration-200">
-            Close
-          </button>
+          <div className="modal-action">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="rounded-md px-8 py-1 hover:bg-green-600 bg-green-500 text-white transition-all ease-in-out duration-200">
+              Add
+            </button>
+            <button className="rounded-md px-8 py-1 hover:bg-red-600 bg-red-500 text-white transition-all ease-in-out duration-200">
+              Close
+            </button>
+          </div>
         </form>
       </dialog>
     </>
