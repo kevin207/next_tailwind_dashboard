@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { BiLogOut } from "react-icons/bi";
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
