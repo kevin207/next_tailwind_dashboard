@@ -1,5 +1,5 @@
 import Breadcumbs from "@/src/components/Breadcumbs";
-import React from "react";
+import AddStudent from "./AddStudent";
 
 const Students = () => {
   const breadcumbs = [
@@ -11,9 +11,12 @@ const Students = () => {
 
   return (
     <>
-      {/* BREADCUMBS 92-4 = 88 */}
+      {/* BREADCUMBS 92-4 = 88vh */}
       <Breadcumbs breadcumbs={breadcumbs} />
-      <div className="h-[88vh] flex items-center justify-center">Students</div>
+      <div className="h-[88vh] flex items-center justify-center flex-col gap-4">
+        <div>Student</div>
+        <AddStudent />
+      </div>
     </>
   );
 };

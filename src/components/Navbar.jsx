@@ -100,7 +100,7 @@ const Navbar = ({ title, children }) => {
       </div>
 
       {/* CHILDREN CONTAINER */}
-      <div className="bg-gray-200 w-100 h-[92vh]">{children}</div>
+      <div className="bg-gray-100 w-100 h-[92vh]">{children}</div>
     </div>
   );
 };
