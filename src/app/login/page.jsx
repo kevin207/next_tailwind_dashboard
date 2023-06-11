@@ -1,22 +1,33 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Login = () => {
   return (
-    <div className="h-screen z-0  w-screen bg-slate-300 flex justify-center items-center itb">
-      {/* OVERLAY BG */}
-      <div className="bg-slate-800 z-10 absolute w-screen h-screen opacity-40" />
+    <div className="h-screen z-0  w-screen bg-slate-300 flex justify-center items-center">
+      {/* BG + OVERLAY */}
+      <Image
+        src="/background.jpg"
+        alt="login background"
+        width={1920}
+        height={1080}
+        className="absolute object-cover w-screen h-screen"
+      />
+      <div className="bg-slate-800 z-10 absolute w-[100%] h-[100%] opacity-50" />
 
       {/* LOGIN FORM */}
       <div className="bg-white z-20 bg-opacity-80 text-slate-700 px-8 py-14 rounded-lg shadow-md w-[500px] ">
         {/* LOGO */}
-        <div className="mb-6 w-[100%] flex items-center justify-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png"
-            className="rounded-full h=[180px] w-[180px]"
-            alt="logo itb"
-          />
+        <div className="flex items-center justify-center">
+          <div className="mb-6 w-[200px] relative h-[200px]">
+            <Image
+              src="/ITB.png"
+              fill={true}
+              alt="logo itb"
+              sizes="100%"
+              priority={true}
+            />
+          </div>
         </div>
 
         {/* FORM CONTENT */}

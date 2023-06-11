@@ -24,7 +24,7 @@ const Dashboard = async () => {
       <div className="h-[88vh] flex items-center justify-center flex-col gap-4">
         <div>Dashboard</div>
 
-        {/* DAISY UI TABLE */}
+        {/* PRODUCT TABLE */}
         <div className="overflow-x-auto w-[65vw] bg-white rounded-sm">
           <table className="table border-collapse">
             {/* TABLE HEAD */}
@@ -39,6 +39,7 @@ const Dashboard = async () => {
                 <th className="text-center">Action</th>
               </tr>
             </thead>
+            {/* TABLE BODY */}
             <tbody className="">
               {data?.map((data) => (
                 <tr key={data.id} className="hover:bg-slate-200">
@@ -50,10 +51,10 @@ const Dashboard = async () => {
                   <td>{data.category}</td>
                   <td>
                     <div className="flex gap-2">
-                      <div className="rounded-md bg-green-500 text-xs px-4 py-1 text-white cursor-pointer hover:bg-green-600 transition-all ease-in duration-200">
+                      <div className="select-none rounded-md bg-green-500 text-xs px-4 py-1 text-white cursor-pointer hover:bg-green-600 transition-all ease-in duration-200">
                         Edit
                       </div>
-                      <div className="rounded-md bg-red-500 text-xs px-4 py-1 text-white cursor-pointer hover:bg-red-600 transition-all ease-in duration-200">
+                      <div className="select-none rounded-md bg-red-500 text-xs px-4 py-1 text-white cursor-pointer hover:bg-red-600 transition-all ease-in duration-200">
                         Delete
                       </div>
                     </div>

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Breadcumbs from "@/src/components/Breadcumbs";
 import React from "react";
@@ -45,7 +44,10 @@ const Assigments = () => {
         </div>
 
         <div className="flex justify-center w-full py-2 gap-2">
-          <a href="#item1" className="btn btn-xs focus:bg-slate-700 focus:text-white">
+          <a
+            href="#item1"
+            className="btn btn-xs focus:bg-slate-700 focus:text-white"
+          >
             1
           </a>
           <a href="#item2" className="btn btn-xs">

@@ -9,13 +9,9 @@ export const metadata = {
 
 export default function DashboardLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="flex flex-row w-screen h-screen">
-          <Drawer />
-          <Navbar title="Assesment System ">{children}</Navbar>
-        </div>
-      </body>
-    </html>
+    <div className="flex flex-row w-screen h-screen">
+      <Drawer />
+      <Navbar title="Assesment System ">{children}</Navbar>
+    </div>
   );
 }
